@@ -30,12 +30,12 @@ class TestMC(unittest.TestCase):
         
  
  
- def wallis(n):
+def wallis(n):
  	p=1
- 	for i in range(1.n):
+ 	for i in range(1,n):
  		p*=4*(i**2)/(4*(i**2)-1)
  	return 2*p
- def monte_carlo(n):
+def monte_carlo(n):
  	c=0
  	for i in range(n):
  		x=2*random()-1
